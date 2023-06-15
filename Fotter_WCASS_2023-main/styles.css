@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .circle {
+      width: 100%;
+    }
+  }
+ 
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("Img/ss.png"); /* Reemplaza "ruta/a/la/imagen.jpg" con la ruta de para la imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .circle {
+      width: 100%;
+    }
+  }
+
+  /* IMg dentro de los circulos del infierno */
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #circle1 {
+    background-image: url("Img/canserbero.png"); 
+  }
+  
+  #circle2 {
+    background-image: url("");  
+  }
+  
+  #circle3 {
+    background-image: url(""); 
+  }
+
+  #circle4 {
+    background-image: url("Img/canserbero.png"); 
+  }
+  
+  /*  estilos para los  círculos */
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .btn {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .circle {
+      width: 100%;
+    }
+  }
+
+/*:::::Pie de Pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #000000;
+    border-top: 1px solid rgb(101, 28, 12); /* Ajusta el color y el grosor de la línea según tus necesidades */
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+/*Cambiar conteniner Creditos*/
+.pie-pagina .grupo-1 .box h2{
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 30px;
+    margin-left: 76px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+/*Cambiar de color © 2023*/
+.pie-pagina .grupo-2{
+    background-color:#000000;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff3f3;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*columnas de css*/
+.columnas {
+  display: flex;
+  display: ruby-base-container;
+  content: normal;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+}
+
+.columna h3 {
+  text-align: center;
+}
+
+.columna ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.columna ul li {
+  margin-bottom: 5px;
+}
+.columna h3,
+.columna ul li,
+.columnas {
+  color: rgb(255, 255, 255); /* Cambia el color a tu preferencia */
+}
+
