@@ -6,9 +6,6 @@
 
 body{
     margin: 0;
-}
-
-.edge{
     background-image: no-repeat;
     background-image: fixed;
     background-image: center;
@@ -16,8 +13,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /*background-image: url(https://w.forfun.com/fetch/7f/7f391459ad72f82dbd3316ed910010e6.jpeg);*/
-    background-image: url(https://wallpapercave.com/wp/wp1901304.jpg);
+    background-image: url(img/fondo_condiciones.jpg);
 }
 
 /*Estilos del alert personalizado*/
@@ -83,26 +79,34 @@ header h1{
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-image: url(https://w0.peakpx.com/wallpaper/885/136/HD-wallpaper-parchment-beige-paper-tan.jpg);
+    background-image: url(/img/fondo_pergamino.webp);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px) {
 }
 
 .main_container h2 {
     margin-bottom: 20px;
     font-family: 'Gothic', sans-serif;
-    font-size: 25px;
+    font-size: 100%;
     color: #3A3B36;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
-
-h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+section{
+    display: flex;
+    flex-direction: column;
 }
 
 p {
-    font-size: 20px;
+    font-size: 10px;
+    margin-left: 25%;
     margin-bottom: 40px;
     font-family: 'Old Standard TT', serif;
     color: #6c441e;

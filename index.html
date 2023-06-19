@@ -8,61 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="edge">
-        <div class="main_container">
-            <script src="star_alert.js"></script><!--Enlace script-->
-            <div class="custom-alert">
-                <div class="custom-alert-content">
-                    <h2>¡Bienvenido al sitio!</h2>
-                    <p>Gracias por visitarnos.</p>
-                    <div class="custom-alert-close">
-                        <button onclick="closeAlert()">Cerrar</button>
-                    </div>
-                </div>
-            </div><!--Alert de ingreso-->
-            <header>
-                <h1>Condiciones</h1>
-            </header>
-            <section>
-                <h2>¡Bienvenido a "El Viaje Eterno" basado en la obra maestra de Dante Alighieri, "La Divina Comedia"!
-                    A continuación se te presentarán unas opciones de las cuales tendrás que escoger la que creas la mejor opción...
-                </h2>
-                <p>
-                    [Opción 1: Adentrarse en el juego]<br>
-                    Si eres valiente y estás dispuesto a enfrentar los desafíos de los nueve círculos del Infierno, los siete terrones del Purgatorio y los nueve cielos del Paraíso, selecciona esta opción. Prepárate para una travesía llena de peligros y descubrimientos mientras te sumerges en una representación interactiva de la epopeya de Dante.
-                </p>
-                <p>
-                    [Opción 2: Asegurar tu salvación]<br>
-                    Si prefieres garantizar tu salvación y evitar los tormentos y pruebas que te esperan en este viaje, selecciona esta opción. Serás guiado a través de una experiencia más tranquila y contemplativa, donde podrás explorar los conocimientos y enseñanzas filosóficas detrás de "La Divina Comedia".
-                </p>
-                <p>
-                    [Opción 3: Ver información adicional]<br>
-                    Si deseas obtener más detalles sobre las mecánicas del juego, consejos de jugabilidad o información sobre la obra original de Dante Alighieri, selecciona esta opción.
-                </p>
-                <p>
-                    [Opción 4: Salir del juego]<br>
-                    Si decides abandonar esta experiencia y regresar a la realidad mundana, selecciona esta opción.
-                </p>
-            </section>
-            <div class="options">
-                <div class="option">
-                    <a href="main_page/index.html">Adentrarse en el juego</a>
-                </div>
-                <div class="option">
-                    <a href="#">Asegurar tu salvación</a>
-                </div>
-                <div class="option">
-                    <a href="#">Ver información adicional</a>
-                </div>
-                <div class="option">
-                    <a href="Fotter_WCASS_2023-main/index.html">Salir del juego</a>
+    <div class="left"></div>
+    <div class="main_container">
+        <script src="star_alert.js"></script><!--Enlace script-->
+        <div class="custom-alert">
+            <div class="custom-alert-content">
+                <h2>¡Bienvenido a "El Viaje Eterno!"</h2>
+                <p>basado en la obra maestra de Dante Alighieri, "La Divina Comedia"!
+                A continuación se te presentarán unas opciones de las cuales tendrás que escoger la que creas la mejor opción...</p>
+                <div class="custom-alert-close">
+                    <button onclick="closeAlert()">Cerrar</button>
                 </div>
             </div>
-            <audio controls>
-                <source src="Audio/canto1.mp3" type="audio/mp3">
-                Tu navegador no soporta audio HTML5.
-            </audio>
+        </div><!--Alert de ingreso-->
+        <header>
+            <h1>Condiciones</h1>
+        </header>
+        <section>
+            <h2>¡Bienvenido a "El Viaje Eterno"</h2>
+            <p>
+                [Opción 1: Adentrarse en el juego]<br>
+                Si eres valiente y estás dispuesto a enfrentar los desafíos de los nueve círculos del Infierno, los siete terrones del Purgatorio y los nueve cielos del Paraíso, selecciona esta opción. Prepárate para una travesía llena de peligros y descubrimientos mientras te sumerges en una representación interactiva de la epopeya de Dante.
+            </p>
+            <p>
+                [Opción 2: Asegurar tu salvación]<br>
+                Si prefieres garantizar tu salvación y evitar los tormentos y pruebas que te esperan en este viaje, selecciona esta opción. Serás guiado a través de una experiencia más tranquila y contemplativa, donde podrás explorar los conocimientos y enseñanzas filosóficas detrás de "La Divina Comedia".
+            </p>
+            <p>
+                [Opción 3: Ver información adicional]<br>
+                Si deseas obtener más detalles sobre las mecánicas del juego, consejos de jugabilidad o información sobre la obra original de Dante Alighieri, selecciona esta opción.
+            </p>
+            <p>
+                [Opción 4: Salir del juego]<br>
+                Si decides abandonar esta experiencia y regresar a la realidad mundana, selecciona esta opción.
+            </p>
+        </section>
+        <div class="options">
+            <div class="option">
+                <a href="main_page/index.html">Adentrarse en el juego</a>
+            </div>
+            <div class="option">
+                <a href="#">Asegurar tu salvación</a>
+            </div>
+            <div class="option">
+                <a href="#">Ver información adicional</a>
+            </div>
+            <div class="option">
+                <a href="Fotter_WCASS_2023-main/index.html">Salir del juego</a>
+            </div>
         </div>
+        <audio id="audio-player" controls>
+            <source src="Audio/canto1.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
     </div>
+    <div class="rigth"></div>
 </body>
 </html>
