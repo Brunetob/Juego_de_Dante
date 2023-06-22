@@ -1,0 +1,15 @@
+body{
+    background-color: rgba(102, 120, 130, 1);
+}
+
+main{
+    /*background-image: url(/img/main_page_img/bgimg_main.png);*/
+    background-image: url(https://media.istockphoto.com/id/1266758469/es/vector/pixel-arte-escena-infierno-demonio-segador.jpg?s=612x612&w=0&k=20&c=zxu1-ENmogUbBOrYUOLmoz7rFi6t-ahLqJkQLhtkhKY=);
+    background-repeat: no-repeat;
+    background-position: 50% -50%;
+}
+
+main{/*Estilos para el contenedor*/
+    margin-top: 13%;
+    border: 1px solid black;
+}
