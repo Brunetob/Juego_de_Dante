@@ -2,14 +2,20 @@ body{
     background-color: rgba(102, 120, 130, 1);
 }
 
-main{
+body{
     /*background-image: url(/img/main_page_img/bgimg_main.png);*/
-    background-image: url(https://media.istockphoto.com/id/1266758469/es/vector/pixel-arte-escena-infierno-demonio-segador.jpg?s=612x612&w=0&k=20&c=zxu1-ENmogUbBOrYUOLmoz7rFi6t-ahLqJkQLhtkhKY=);
-    background-repeat: no-repeat;
-    background-position: 50% -50%;
+    /*background-image: url(https://media.istockphoto.com/id/1266758469/es/vector/pixel-arte-escena-infierno-demonio-segador.jpg?s=612x612&w=0&k=20&c=zxu1-ENmogUbBOrYUOLmoz7rFi6t-ahLqJkQLhtkhKY=);*/
+    background-image: url(https://www.wallpapertip.com/wmimgs/99-998008_amazing-hell-background-for-windows-src-amazing-hell.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 main{/*Estilos para el contenedor*/
-    margin-top: 13%;
+    margin: 11%;
     border: 1px solid black;
 }
