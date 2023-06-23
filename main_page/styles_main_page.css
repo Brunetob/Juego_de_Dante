@@ -2,10 +2,9 @@ body{
     background-color: rgba(102, 120, 130, 1);
 }
 
-body{
-    /*background-image: url(/img/main_page_img/bgimg_main.png);*/
-    /*background-image: url(https://media.istockphoto.com/id/1266758469/es/vector/pixel-arte-escena-infierno-demonio-segador.jpg?s=612x612&w=0&k=20&c=zxu1-ENmogUbBOrYUOLmoz7rFi6t-ahLqJkQLhtkhKY=);*/
-    background-image: url(https://www.wallpapertip.com/wmimgs/99-998008_amazing-hell-background-for-windows-src-amazing-hell.jpg);
+main{
+    background-image: url(https://img.freepik.com/vector-premium/escena-pixel-art-infierno-demonio-reaper_150088-128.jpg?w=2000);
+    /*background-image: url(https://www.wallpapertip.com/wmimgs/99-998008_amazing-hell-background-for-windows-src-amazing-hell.jpg);*/
     background-image: no-repeat;
     background-image: fixed;
     background-image: center;
@@ -13,6 +12,41 @@ body{
 }
 
 main{/*Estilos para el contenedor*/
-    margin: 11%;
+    margin: 5%;
     border: 1px solid black;
+}
+
+/*Estilos encabezado*/
+header h1{
+    font-size: 400%;
+    font-family: "EB Garamond", serif;
+    color: rgba(113, 52, 52, 1);
+    -webkit-text-stroke: 1px white;/*Añade un borde al texto*/
+    text-align: center;
+}
+
+
+/*Estilos contenedor circulos*/
+.circles{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+#cir_One{
+    align-self: flex-end;
+    margin-right: 5%;
+}
+#cir_Two{
+    margin-left: 60%;
+}
+#cir_Third{
+    margin-left: 40%;
 }
