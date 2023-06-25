@@ -32,6 +32,7 @@
     </div>
 
     <script>
+
         var cartasArray = [1,2,3,4,5,6,1,2,3,4,5,6]; /*array que indica cuántas cartas va a haber en el juego*/
         var contadorVolteadas = 0;/*Contador de cartas volteadas para poder comparar solo dos cartas*/
         /*Variables para relaizar validaciones como encontrar el par*/
@@ -43,6 +44,11 @@
         var temporizador; /*sirve para crear una función con un setinterval. Se inicia cuando empieza el juego y termina cuando se completaron los pares*/
         var intentos = 0;/*Conteo de intentos en encontrar los pares*/
         var clic = false;
+
+        // Agrega el código aquí
+        var nivel1Completado = false;
+        //***********************************
+
         function carta(x,y,w,h,imagenFrente,imagenAtras){/*Funcion u objeto "carta". Es la estructura que llevara cada una de las cartas*/
         /*Recibe como parámetros su posición en 'x' y 'y', así como su ancho y altura y dos imágenes, una de frente y una de atrás */
         /*Una imagen la lleva todas las cartas y la otra es individual*/
@@ -71,7 +77,29 @@
         window.onload = function() {/*Cuando cargue la página va a invocar el método cargarCartas e iniciar temporizador */
             cargaCartas();
             temporizador();
+            bloquearNiveles();
         };
+
+        //******************************* Agrega el código aquí
+        function bloquearNiveles() {
+            var nivel2 = document.getElementById("cir_Two");
+            var nivel3 = document.getElementById("cir_Third");
+
+            if (!nivel1Completado) {
+                nivel2.style.opacity = "0.6";
+                nivel2.style.cursor = "not-allowed";
+
+                nivel3.style.opacity = "0.6";
+                nivel3.style.cursor = "not-allowed";
+            }
+        }  
+        
+        // Agrega el código aquí
+        function completarNivel1() {
+            nivel1Completado = true;
+            bloquearNiveles();
+            window.parent.postMessage('nivel1Completado', 'https://tu-sitio-web.com');
+        }//**********************************
 
         function desordenarArrays(arrayX){
             /*Esta función recibe un array (cartasArray) para que desordene las cartas*/
@@ -133,6 +161,10 @@
                                     if(encontradas == 6){
                                         clearInterval(temporizador);
                                         document.getElementById('ganaste').style.display = 'block';
+                                        /*Envio del parámetro para avanzar al siguiente nivel
+                                        var nivelCompletado = true; // Puedes definir un valor que indique el nivel completado
+                                        // Envía el argumento al código anterior
+                                        window.parent.postMessage(nivelCompletado, '*');*/
                                     }
                                 }
                             }

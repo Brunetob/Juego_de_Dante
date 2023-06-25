@@ -4,7 +4,6 @@ body{
 
 main{
     background-image: url(https://img.freepik.com/vector-premium/escena-pixel-art-infierno-demonio-reaper_150088-128.jpg?w=2000);
-    /*background-image: url(https://www.wallpapertip.com/wmimgs/99-998008_amazing-hell-background-for-windows-src-amazing-hell.jpg);*/
     background-image: no-repeat;
     background-image: fixed;
     background-size: cover;
@@ -76,8 +75,6 @@ header h1{
 }
 
 /*Media querie*/
-
-/* Media query */
 @media screen and (max-width: 780px) {
 
     .main{
