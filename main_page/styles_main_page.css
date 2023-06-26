@@ -51,11 +51,18 @@ header h1{
     width: auto;
     display: flex;
     flex-direction: column;
+    /*texto*/
+    justify-content: center;
+}
+p{
+    color: white;
 }
 .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 250px;
-    border: 2px solid white;
     border-radius: 50%;
     /*Animación*/
     position: relative;
