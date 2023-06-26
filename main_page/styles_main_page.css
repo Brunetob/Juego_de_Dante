@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    background-image: url(https://img.freepik.com/vector-premium/escena-pixel-art-infierno-demonio-reaper_150088-128.jpg?w=2000);
+    background-image: url(https://cdn.domestika.org/c_fill,dpr_auto,f_auto,q_auto,w_820/v1595223357/content-items/005/258/102/Danse_Macabre_x3_Esqueletos-original.gif?1595223357);
     background-image: no-repeat;
     background-image: fixed;
     background-size: cover;
@@ -13,17 +13,37 @@ main{
 
 /*Estilos encabezado*/
 header h1{
+    box-sizing: border-box;
     font-size: 400%;
     font-family: "EB Garamond", serif;
     color: rgba(113, 52, 52, 1);
     -webkit-text-stroke: 1px white;/*Añade un borde al texto*/
     text-align: center;
+    animation-name: exampleThird;
+}
+
+@keyframes exampleThird {
+    0%   {top:0px;}
+    25%  {top:20px;}
+    50%  {top:0px;}
+    75%  {top:20px;}
+    100% {top:0px;}
 }
 
 /*Estilos imagen diablo*/
 .diablo{
     text-align: center;
-    position: absolute;
+    position: relative;
+    animation-name: exampleTwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes exampleTwo {
+    0%   {top:0px;}
+    25%  {top:20px;}
+    50%  {top:0px;}
+    75%  {top:20px;}
+    100% {top:0px;}
 }
 
 /*Estilos contenedor circulos*/
@@ -46,7 +66,7 @@ header h1{
     transition: width 2s, height 2s, transform 2s;
 }
 @keyframes example {
-    from {left: -200px;}
+    from {opacity: 0; left: -200px;}
     to {left: -15px;}
 }
 

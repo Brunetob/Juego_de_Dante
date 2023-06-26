@@ -1,10 +1,17 @@
 body{
-    width: 500px;
     padding: 0px 10px;
     margin: 10px auto;
-    text-align: center;
     background-color: #ffeab9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Agrega esta línea para centrar verticalmente el contenido */
+    align-items: center; /* Agrega esta línea para centrar horizontalmente el contenido */
 }
+
+header{
+    width: 100%;
+}
+
 .flip-cartaTemporal-inner {/*Sirven apra dar un efecto de hover que al pasar el mouse se den la vuelta, estas están modificadas para que lo hagan al dar clic*/
     position: relative;
     width: 100%;
@@ -29,8 +36,26 @@ body{
     transform: rotateY(180deg);
 }/***********************************************************************/
 
+#back{
+    width: 25px;
+    height: 25px;
+    align-self: flex-start;
+}
+#back:hover{
+    width: 30px;
+    height: 30px;
+}
+
+#Tittle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
 /*Otros estilos*/
 h1{
+    width: 500px;
+    margin: 0px;
     color: blue;
     box-shadow: 0 4px 8px 0 #0c0d0dbd;
     background-color: aquamarine;
@@ -42,6 +67,7 @@ h1{
     background-color: aquamarine;
     position: relative;
     box-shadow: 0 4px 8px 0 #0c0d0dbd;
+    align-self: center;
 }
 
 #ganaste{

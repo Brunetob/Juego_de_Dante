@@ -116,6 +116,16 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /*Animación*/
+    position: relative;
+    animation-name: star;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes star {
+    from{left: -5px;}
+    to{left: 5px;}
 }
 
 /*Estilos de botónes*/
