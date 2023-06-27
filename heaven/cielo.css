@@ -9,7 +9,7 @@ body{
     background-size: cover;
 }
 #pantalla-incial{
-    display: none;
+    display: block;
     max-width: 700px;
     margin: 50px auto;
     text-align: center;
@@ -41,7 +41,7 @@ button:hover{
 }
 
 #pantalla-juego{
-    display: block;
+    display: none;
 
 }
 .pregunta-actual{
