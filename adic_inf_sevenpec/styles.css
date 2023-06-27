@@ -1,0 +1,72 @@
+body {
+    background-image: url('img/Pinterest\ -\ España.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+
+  a, img{
+    animation: moveButtons 2s infinite;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  h1 {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.615);
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  #sinButtons {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgba(48, 46, 46, 0.438);
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  animation: moveButtons 2s infinite;
+  text-align: center;
+}
+  
+  button:hover {
+    background-color: #c51414ec;
+  }
+  
+  #sinInfo {
+    color: rgba(255, 255, 255, 0.757);
+    font-size: 24px;
+    margin: 50px auto;
+    width: 60%;
+  }
+
+  /*Animacion button*/
+
+  @keyframes moveButtons {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  /*Borde de button*/
+
+  button {
+    border-radius: 20px;
+  }
