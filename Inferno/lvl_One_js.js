@@ -64,7 +64,7 @@ function cargaCartas(){/*Funcion de cartas*/
         if(i < 4){ y = 10; }/*Condicionales para modificar la posición en 'y' y posicionar las filas una debajo de otra*/
         if(i < 8 && i >3){ y = 130; }
         if(i < 12 && i >7){ y = 250; }
-        let cartaTemporal = new carta(modificador ,y ,100 ,100 ,'img/fondo.png','img/'+cartasTemporal[i]+'.png'); /*instanciamos el objeto carta pasándole los parámetros de x, y, w, h; también en primer lugar la imagen de espaldas y luego la imagen de frente individual que toma de la carpeta imágenes como ruta y luego del array de cartasTemporal la posición de i en ese momento */
+        let cartaTemporal = new carta(modificador ,y ,100 ,100 ,'img/demonio.png','img/'+cartasTemporal[i]+'.png'); /*instanciamos el objeto carta pasándole los parámetros de x, y, w, h; también en primer lugar la imagen de espaldas y luego la imagen de frente individual que toma de la carpeta imágenes como ruta y luego del array de cartasTemporal la posición de i en ese momento */
         lugar.insertAdjacentHTML("beforeend", cartaTemporal.template);/*Se inserta el código que se tiene como template de la carta y que antes del cierre del div de pantalla, se va a usar el objeto de carta temporal y accedemos al valor de template y lo va a ahcer por cada una de las iteraciones de 0 a 11 */
         modificador = modificador + 120;/*El modificador se le suma 120 para que la siguiente carta se sume en 120 la siguiente carta -> 10 130 */
     }
@@ -72,7 +72,7 @@ function cargaCartas(){/*Funcion de cartas*/
 
 function pasarSiguienteNivel() {
     //Se redirige automáticamente al siguiente nivel una vez completado el primero
-    window.location.href = "/heaven/cielo.html";
+    window.location.href = "/purgatorio/index.html";
 }
 
 function voltear(e){
