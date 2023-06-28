@@ -1,17 +1,24 @@
 body {
     background-image: url('img/Pinterest\ -\ España.gif');
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
-  a, img{
-    animation: moveButtons 2s infinite;
-    position: relative;
-    margin-left: 10px;
+  #back{
+    margin: 10px;
+    float: left;
+  }
+
+  #back:hover{
+    transition: 0.6s;
+    width: 2.3%;
   }
   
   h1 {
@@ -20,6 +27,7 @@ body {
     font-size: 36px;
     margin-top: 50px;
     text-align: center;
+    border: 1px solid white;
   }
   
   #sinButtons {
