@@ -1,5 +1,5 @@
 const pecadosCapitales = [
-    {
+    {/*Primer par*/
       nombre: "La soberbia",
       preguntas: [
         {
@@ -14,7 +14,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Segundo par*/
       nombre: "La avaricia",
       preguntas: [
         {
@@ -29,7 +29,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Tercer par*/
       nombre: "La lujuria",
       preguntas: [
         {
@@ -44,7 +44,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Cuarto par*/
       nombre: "La ira",
       preguntas: [
         {
@@ -59,7 +59,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Quinto par*/
       nombre: "La gula",
       preguntas: [
         {
@@ -74,7 +74,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Sexto par*/
       nombre: "La envidia",
       preguntas: [
         {
@@ -89,7 +89,7 @@ const pecadosCapitales = [
         }
       ]
     },
-    {
+    {/*Séptimo par*/
       nombre: "La pereza",
       preguntas: [
         {
@@ -106,7 +106,7 @@ const pecadosCapitales = [
     }
   ];
   
-  let currentPecadoIndex = 0;
+let currentPecadoIndex = 0;
 let currentQuestionIndex = 0;
 let attemptsLeft = 3;
 
@@ -182,7 +182,8 @@ function nextQuestion() {
 
         if (currentPecadoIndex >= pecadosCapitales.length) {
             alert("Has respondido todas las preguntas sobre los 7 pecados capitales. Regresando a la página principal.");
-            window.location.href = "index.html";
+            //window.location.href = "index.html";
+            window.location.href = "/heaven/cielo.html";
         }
     }
 
