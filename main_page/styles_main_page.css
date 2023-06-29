@@ -101,6 +101,10 @@ p{
     width: 100%;
 }
 
+/*Nominación*/
+
+
+
 /*Media querie*/
 @media screen and (max-width: 780px) {
 
@@ -137,5 +141,10 @@ p{
     .circle {
         width: 200px;
         height: 200px;
+    }
+
+    .diablo a img{
+        width: 30%;
+        text-align: center;
     }
 }
