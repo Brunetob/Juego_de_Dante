@@ -27,7 +27,7 @@ body {
     font-size: 36px;
     margin-top: 50px;
     text-align: center;
-    border: 1px solid white;
+   
   }
   
   #sinButtons {
@@ -78,3 +78,10 @@ button {
   button {
     border-radius: 20px;
   }
+
+  #back {
+    position: relative;
+    top: 20px; 
+    left: 20px; 
+  }
+  
